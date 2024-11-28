@@ -1,0 +1,85 @@
+.video-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 5%;
+  background-color: #f9f9f9;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .video-container {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .text-content {
+    flex: 1;
+    padding: 1rem;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #ff0000; // Coca-Cola red
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #333333;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .btn {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      background-color: #ff0000; // Coca-Cola red
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #cc0000;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  // Animations
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
