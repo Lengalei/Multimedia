@@ -5,10 +5,9 @@ import advertisingVideos from "./advertisingVideos";
 const VideoAdvertising = () => {
   return (
     <section className="video-advertising">
-      <h2>Advertising Showcase</h2>
+      <h2>Our Creative Video Contents</h2>
       <p>
-        Explore our engaging advertising campaigns that capture attention and
-        drive results.
+        Explore our engaging advertising campaigns.
       </p>
       <div className="video-grid">
         {advertisingVideos.map((video) => (

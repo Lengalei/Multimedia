@@ -1,44 +1,68 @@
 .video-advertising {
-  padding: 3rem 1rem;
-  background-color: #f5f5f5; // Light gray background
+  padding: 4rem 5%;
+  background-color: #f4f4f4; // Light background to contrast with video content
   text-align: center;
 
   h2 {
-    color: #1a73e8; // Primary blue color
+    font-size: 2.5rem;
+    color: #ff0000; // Coca-Cola red for branding
     margin-bottom: 1rem;
   }
 
   p {
-    color: #333; // Dark text color
+    font-size: 1.2rem;
+    color: #555;
     margin-bottom: 2rem;
   }
 
   .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 
     .video-card {
-      background: white;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow
-      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
 
       video {
-        max-width: 100%;
+        width: 100%;
         border-radius: 8px;
+        margin-bottom: 1rem;
+        border: 2px solid #ff0000; // Coca-Cola red border for branding
       }
 
       h3 {
-        color: #ffa62f; // Secondary orange color
-        margin: 0.5rem 0;
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 0.5rem;
       }
 
       p {
-        color: #333; // Dark text color
-        font-size: 0.9rem;
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        text-align: center;
       }
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    .video-grid {
+      grid-template-columns: 1fr;
     }
   }
 }
