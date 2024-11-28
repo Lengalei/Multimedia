@@ -15,7 +15,7 @@ const advertisingVideos = [
     id: 3,
     title: "Customer Testimonial",
     description: "Hear what our customers have to say.",
-    videoUrl: "https://www.w3schools.com/html/mov_bbb.mp4",
+    videoUrl: "/cocvid.mp4",
   },
 ];
 

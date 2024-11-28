@@ -8,7 +8,9 @@ const HappyMoments = () => {
     { image: "/coc3.jpg", caption: "Refreshing Connections" },
     { image: "/coc4.jpg", caption: "Unforgettable Memories" },
     { image: "/coc5.jpg", caption: "Joy in Every Sip" },
-    { image: "/coc.jpg", caption: "Laughter and Love" },
+    { image: "/coc6.jpg", caption: "Laughter and Love" },
+    { image: "/coc7.jpg", caption: "Laughter and Love" },
+    { image: "/coc8.jpg", caption: "Laughter and Love" },
   ];
 
   return (
