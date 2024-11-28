@@ -13,7 +13,7 @@ const Header = () => {
         <span>Coca-Cola E-Marketing Hub</span>
       </div>
       <nav>
-        <ul className="nav-links">
+        {/* <ul className="nav-links">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -26,7 +26,7 @@ const Header = () => {
           <li>
             <a href="#contact">Contact Us</a>
           </li>
-        </ul>
+        </ul> */}
       </nav>
     </header>
   );

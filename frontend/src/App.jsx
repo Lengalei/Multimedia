@@ -8,6 +8,8 @@ import ImageGraphicsShowcase from "./components/ImageGraphicsShowcase";
 import AboutSection from "./components/AboutSection";
 import BrandSection from "./components/BrandSection";
 import HappyMoments from "./components/HappyMoments";
+import VideoTextSection from "./components/VideoTextSection";
+import PodcastsSection from "./components/PodcastsSection";
 
 const App = () => {
   return (
@@ -15,9 +17,10 @@ const App = () => {
       <Header />
       <Hero />
       <AboutSection />
+      <VideoTextSection />
       <VideoAdvertising />
       <HappyMoments />
-      {/* <ImageGraphicsShowcase /> */}
+      <PodcastsSection />
       <BrandSection />
       <Footer />
     </>
