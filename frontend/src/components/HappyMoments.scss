@@ -1,0 +1,108 @@
+.happy-moments {
+  text-align: center;
+  padding: 3rem 5%;
+  background-color: #ffffff;
+
+  h2 {
+    font-size: 2.5rem;
+    color: #ff0000; // Coca-Cola red
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2rem;
+    animation: slideIn 2s ease-in-out;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      &:hover img {
+        transform: scale(1.1);
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: bold;
+          text-align: center;
+          animation: zoomIn 0.5s ease-in-out;
+        }
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  // Animations
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+}

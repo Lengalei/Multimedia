@@ -1,0 +1,56 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+  background-color: #ffffff; // White background for contrast
+
+  .content {
+    flex: 1;
+    padding-right: 2rem;
+    color: #000000;
+
+    h2 {
+      font-size: 2.5rem;
+      color: #ff0000; // Coca-Cola red
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #333333;
+    }
+  }
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    .about-image {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .content {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .image-container {
+      margin-top: 1.5rem;
+
+      .about-image {
+        max-width: 100%;
+      }
+    }
+  }
+}

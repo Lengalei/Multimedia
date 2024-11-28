@@ -1,0 +1,47 @@
+.brand-section {
+  text-align: center;
+  padding: 3rem 5%;
+  background-color: #f9f9f9;
+
+  h2 {
+    font-size: 2.5rem;
+    color: #ff0000; // Coca-Cola red
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 2rem;
+  }
+
+  .brand-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+
+    .brand-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 0.5rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555555;
+      }
+    }
+  }
+}

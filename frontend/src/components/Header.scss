@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ff0000; // Coca-Cola red
+  color: #ffffff;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .logo-image {
+      width: 50px;
+      height: auto;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          font-size: 1rem;
+          color: #ffffff;
+          font-weight: bold;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #000000; // Black on hover for contrast
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #ff0000;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: white;
+}

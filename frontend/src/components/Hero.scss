@@ -1,0 +1,94 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); // Adjust for desired overlay effect
+    }
+  }
+
+  .hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ff0000; // Coca-Cola red
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .advertising-words {
+      margin-bottom: 2rem;
+
+      h2 {
+        font-size: 2rem;
+        font-style: italic;
+        color: #ff0000;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: #ffffff;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &.primary {
+          background-color: #ff0000;
+          color: #ffffff;
+        }
+
+        &.secondary {
+          background-color: #ffffff;
+          color: #ff0000;
+          border: 2px solid #ff0000;
+        }
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
