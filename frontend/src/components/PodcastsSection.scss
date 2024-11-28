@@ -1,0 +1,112 @@
+.podcasts-section {
+  padding: 4rem 5%;
+  background-color: #f4f4f4;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    color: #ff0000; // Coca-Cola red
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .podcast-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+
+    .podcast-card {
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+      }
+
+      .podcast-info {
+        position: relative;
+        z-index: 2;
+        h3 {
+          font-size: 1.8rem;
+          color: #fff;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #f9f9f9;
+          margin-bottom: 1rem;
+        }
+
+        .audio-controls {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          .play-button {
+            background-color: #ff0000; // Coca-Cola red
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+
+            svg {
+              color: #fff;
+              font-size: 1.5rem;
+            }
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          .progress-bar {
+            flex-grow: 1;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 5px;
+            background: #ddd;
+            border-radius: 5px;
+            outline: none;
+
+            &::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              appearance: none;
+              width: 10px;
+              height: 10px;
+              background: #ff0000; // Coca-Cola red
+              border-radius: 50%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
